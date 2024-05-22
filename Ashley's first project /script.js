@@ -33,3 +33,32 @@ outputDiv.innerHTML += "<p>" + userName + " has a name: " + hasName + "</p>";
 // // Additional output to console
 // console.log(userName + " is an adult: " + isAdult);
 // console.log(userName + " has a name: " + hasName);
+
+
+ddocument.addEventListener("DOMContentLoaded", function() {
+     const audioElement = document.getElementById('background-music');
+     const musicControlButton = document.getElementById('music-control');
+ 
+     musicControlButton.addEventListener('click', function() {
+         if (audioElement.paused) {
+             audioElement.play();
+             musicControlButton.textContent = 'Pause Music';
+         } else {
+             audioElement.pause();
+             musicControlButton.textContent = 'Play Music';
+         }
+     });
+ });
+ 
+
+      document.getElementById('play-pause-button').addEventListener('click', function() {
+          var audioPlayer = document.getElementById('audio-player');
+          if (audioPlayer.paused) {
+              audioPlayer.play();
+              this.textContent = 'Pause';
+          } else {
+              audioPlayer.pause();
+              this.textContent = 'Play';
+          }
+      });
+      

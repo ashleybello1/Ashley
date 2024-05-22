@@ -15,7 +15,9 @@ body{
     width: 100px;
     border: 15px solid rgba(176, 97, 65, 0.603);
     padding: 10px;
-    margin: 20px; 
+    margin: 0 20px; 
+    display: flex;
+    justify-content: space-between;
 }
 #h1{
     text-align: center;
@@ -42,7 +44,7 @@ ul {
 
 
 .nav1{
-    padding: 10px;
+    padding: 30px;
     box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0, 0.4);
     align-items: center;
     justify-content: center;
@@ -92,4 +94,39 @@ ul {
   0% {opacity: 0;}
   50% {opacity: 0.5;}
   100% {opacity: 1;}
+}
+
+#music-control {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+#play-pause-button {
+    background-color: #EED9c4
+    color #858585;
+    border: none;
+    padding: 10px 20px;
+    border-radius : 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#play-pause-button:hover {
+    background-color: black;
+}
+
+.container {
+    text-align: center;
+}
+.inline-block {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
+p{
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
